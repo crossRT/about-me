@@ -132,7 +132,7 @@ a:hover {
 }
 
 .bl-icon {
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome',"Lato",Calibri,Arial,sans-serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
