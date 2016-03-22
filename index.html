@@ -8,23 +8,23 @@
 		<meta name="description" content="A place to know about crossRT" />
 		<meta name="author" content="crossRT" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div class="container">	
+		<div class="wrapper">	
 			<div id="bl-main" class="bl-main">
 				<section>
 					<div class="bl-box">
 						<h2 class="bl-icon bl-icon-about">About</h2>
 					</div>
-					<div class="bl-content">
+					<div class="bl-content container">
 						<h2>About <strong>me</strong></h2>
 						<p>
-							My real name is <strong>Rui Tai</strong>, you can call me <strong>Ray</strong> or <strong>crossRT</strong>. A web developer, mobile apps developer and system administrator from Malaysia, Selangor, Petaling Jaya. And also I'm definitely an open source and IT enthusiast. If I need to describe myself, I would say I'm young, and I need a chance. =)
+							I'm Rui Tai, you can call me <strong>Ray</strong> or <strong>crossRT</strong>. A web developer, mobile apps developer and system administrator from Malaysia, Selangor, Petaling Jaya. And also, I'm an open source enthusiast. I work in Linux environment, and I do really like to use open source to build projects that I'm interested. If we same, why not sit down and have a chat together? =D
 						</p>
-						<p>Feel free to contact me if you have any questions.</p>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
 				</section>
@@ -32,11 +32,11 @@
 					<div class="bl-box">
 						<h2 class="bl-icon bl-icon-contact">Contact</h2>
 					</div>
-					<div class="bl-content">
+					<div class="bl-content container">
 						<h2>Get in touch</h2>
-						<p>Kindly contact me for any enquiry. =D</p>
+						<p>Kindly contact me for any inquiry. =D</p>
 						<p><i class="fa fa-fw fa-mobile"></i> +60102022192</p>
-						<p><i class="fa fa-fw fa-envelope-o"></i> crossRT@gmail.com</p>
+						<p><i class="fa fa-fw fa-envelope-o"></i> hello@crossrt.me</p>
 						<p><i class="fa fa-fw fa-facebook-square"></i><a href="https://www.facebook.com/CrossRT" style="text-transform: none;" target="_blank">RuiTai Low</a></p>
 						<p><i class="fa fa-fw fa-github"></i><a href="https://github.com/crossRT" style="text-transform: none;" target="_blank">crossRT</a></p>
 					</div>
@@ -46,27 +46,34 @@
 					<div class="bl-box">
 						<h2 class="bl-icon bl-icon-works">Works</h2>
 					</div>
-					<div class="bl-content">
+					<div class="bl-content container">
 						<h2>My Works</h2>
 						<ul id="bl-work-items">
-							<li data-panel="panel-1">
+							<li data-panel="panel-ontime">
 								<a href="#"><img src="images/ontime.png" /></a>
 								<p>onTime</p>
 							</li>
-							<li data-panel="panel-2">
+							<li data-panel="panel-ge13">
 								<a href="#"><img src="images/ge13.png" /></a>
 								<p>GE13</p>
 							</li>
-							<li data-panel="panel-3">
+							<li data-panel="panel-wedding">
+								<a href="#"><img src="images/wedding.png" /></a>
+								<p>Sister Wedding</p>
+							</li>
+							<li data-panel="panel-easter">
+								<a href="#"><img src="images/easter.png" /></a>
+								<p>Easter Event</p>
+							</li>
+							<li data-panel="panel-kraytiv">
 								<a href="#"><img src="images/kraytiv.png" /></a>
 								<p>Kraytiv</p>
 							</li>
-							<li data-panel="panel-4">
+							<li data-panel="panel-yaca">
 								<a href="#"><img src="images/yaca.png" /></a>
 								<p>Yacademia</p>
 							</li>
 						</ul>
-						<p>Here is just a part of my works, check my <a href="https://github.com/crossRT" target="_blank">GitHub</a> to discover more. =)</p>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
 				</section>
@@ -74,15 +81,18 @@
 					<div class="bl-box">
 						<h2 class="bl-icon bl-icon-skills">Skills</h2>
 					</div>
-					<div class="bl-content">
+					<div class="bl-content container">
 						<h2>My skills</h2>
-						<p>In a simple words, I can create software, web or mobile application, server hosting, build PC and entertainment system. Kindly contact me for any enquiry.</p>
+						<p>In a simple words, I can build web and mobile application. If you have any idea and you want to create a web application or website, kindly contact me for any inquiry.</p>
+						<h2>My stack</h2>
 						<article>
-							<p>PHP, Laravel, JavaScript, jQuery, Java, Android, C, C++, Node.js</p>
-
-							<p>MySQL, MariaDB, MSSQL, PostgresSQL, SQLite, MongDB</p>
+							<p>PHP, Laravel</p>
+							<p>Java, Android</p>
+							<p>JavaScript, jQuery, Node.js, AngularJs2</p>
+							<p>MySQL, MariaDB, SQLite, MongDB</p>
 							<p>Apache, Nginx</p>
-							<p>Linux, Ubuntu, Fedora, ArchLinux</p>
+							<p>Linux, Ubuntu</p>
+							<p>Git, and some other open source technology.</p>
 						</article>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
@@ -91,24 +101,50 @@
 
 				<!-- Panel items for the works -->
 				<div class="bl-panel-items" id="bl-panel-work-items">
-					<div data-panel="panel-1">
+					<div data-panel="panel-ontime">
 						<div>
-							<img src="images/ontime.png" />
+							<div class="col-md-4">
+								<img src="images/ontime.png" />
+							</div>
 							<h3>onTime</h3>
 							<p>onTime is an Android application for A.P.U. students to grab their class timetable from webspace and use it while offline. This application was created due to the inconvenient of A.P.U. timetable system. The simple of this application get a lot of praise and positive rating from A.P.U. students.</p>
 							<p><a href="https://play.google.com/store/apps/details?id=com.crossrt.showtime" target="_blank">Link</a></p>
 						</div>
 					</div>
-					<div data-panel="panel-2">
+					<div data-panel="panel-ge13">
 						<div>
-							<img src="images/ge13.png" />
+							<div class="col-md-4">
+								<img src="images/ge13.png" />
+							</div>
 							<h3>GE13</h3>
 							<p>This is a simple web application for users to get the result of Malaysia General Election 2013 quickly and clearly. Unfortunately, it was shut down before result announced due to the heavy traffic of request and insufficient performance of server.</p>
 						</div>
 					</div>
-					<div data-panel="panel-3">
+					<div data-panel="panel-wedding">
 						<div>
-							<img src="images/kraytiv.png" />
+							<div class="col-md-4">
+								<img src="images/wedding-preview.png" />
+							</div>
+							<h3>Sister Wedding</h3>
+							<p>A simple web application for my sister and brother-in-law's wedding dinner. It allows their guests to write wishes on the welcome desk, and all wishes will output to the projector.</p>
+							<p><a href="http://wedding.crossrt.me" target="_blank">Link</a></p>
+						</div>
+					</div>
+					<div data-panel="panel-easter">
+						<div>
+							<div class="col-md-4">
+								<img src="images/easter-preview.png" />
+							</div>
+							<h3>Easter Event</h3>
+							<p>An application for a church easter event called "Your Easter Invites". All fellows can create a meme with preset images to share what they have found. All memes are able to share on Facebook, Twitter and Google+.</p>
+							<p><a href="http://easter.fga.my" target="_blank">Link</a></p>
+						</div>
+					</div>
+					<div data-panel="panel-kraytiv">
+						<div>
+							<div class="col-md-4">
+								<img src="images/kraytiv.png" />
+							</div>
 							<h3>Kraytiv</h3>
 							<p>
 								This is an eShop system that powered by <a href="http://www.opencart.com/" target="_blank">OpenCart</a>, but modify and enhance some functions. I built this for myself to sell some creative and special gifts online. 
@@ -116,9 +152,11 @@
 							<p><a href="https://www.kraytiv.com" target="_blank">Link</a></p>
 						</div>
 					</div>
-					<div data-panel="panel-4">
+					<div data-panel="panel-yaca">
 						<div>
-							<img src="images/yaca.png" />
+							<div class="col-md-4">
+								<img src="images/yaca.png" />
+							</div>
 							<h3>Yacademia</h3>
 							<p>Same as Kraytiv, another eShop system powered by <a href="http://www.opencart.com/" target="_blank">OpenCart</a>, but this is host for another client.</p>
 							<p><a href="http://yaca.me" target="_blank">Link</a></p>
